@@ -114,6 +114,8 @@ h1, h2, h3, h4, h5, h6 {
 #header #logo img {
   padding: 0;
   margin: 0;
+  width: 20%;
+  height: 20%;
 }
 
 @media (max-width: 768px) {
@@ -572,7 +574,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 #services {
   background: #fff;
   background-size: cover;
-  padding: 80px 0 60px 0;
+  padding: 60px 0 60px 0;
 }
 
 #services .box {
@@ -580,7 +582,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 50px;
   text-align: center;
   border: 1px solid #e6e6e6;
-  height: 200px;
+  height: 280px;
   position: relative;
   background: #fafafa;
 }
