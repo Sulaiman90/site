@@ -1,6 +1,6 @@
 jQuery(document).ready(function( $ ) {
 
-  console.log("window loaded");
+ // console.log("window loaded");
   if ($(this).scrollTop() > 100) {
     $('.back-to-top').fadeIn('slow');
     $('#header').addClass('header-fixed');
@@ -11,7 +11,7 @@ jQuery(document).ready(function( $ ) {
 
   // Header fixed and Back to top button
   $(window).scroll(function() {
-    console.log("window scrolling");
+    //console.log("window scrolling");
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
       $('#header').addClass('header-fixed');
@@ -148,5 +148,9 @@ jQuery(document).ready(function( $ ) {
   google.maps.event.addDomListener(window, 'load', initialize_google_map);
 
 // custom code
+
+$(".sectionNew").click(function() {
+  $(".detailed_info").html($(this.hash).html());
+});
 
 });

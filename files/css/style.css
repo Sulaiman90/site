@@ -602,6 +602,9 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: #fafafa;
 }
 
+
+/* new code */
+#modalblock1 { display: none; }
 /* #services .row div:last-child .box {
   height: 220px;
 } */
