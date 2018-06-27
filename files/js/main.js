@@ -1,7 +1,17 @@
 jQuery(document).ready(function( $ ) {
 
+  console.log("window loaded");
+  if ($(this).scrollTop() > 100) {
+    $('.back-to-top').fadeIn('slow');
+    $('#header').addClass('header-fixed');
+  } else {
+    $('.back-to-top').fadeOut('slow');
+    $('#header').removeClass('header-fixed');
+  }
+
   // Header fixed and Back to top button
   $(window).scroll(function() {
+    console.log("window scrolling");
     if ($(this).scrollTop() > 100) {
       $('.back-to-top').fadeIn('slow');
       $('#header').addClass('header-fixed');
@@ -59,7 +69,7 @@ jQuery(document).ready(function( $ ) {
     $("#mobile-nav, #mobile-nav-toggle").hide();
   }
 
-  // Smoth scroll on page hash links
+  // Smooth scroll on page hash links
   $('a[href*="#"]:not([href="#"])').on('click', function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
